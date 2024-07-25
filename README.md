@@ -28,6 +28,8 @@ git clone https://github.com/richardson-05/dev-resources.git
 ## Contributing
 Contributions are welcome! If you have useful code snippets, utilities, or tools that you would like to share, please feel free to submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
+You can also copy and paste the desired files directly from the repository to your local machine, without needing to clone the repository.
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/richardson-05/dev-resources/blob/main/LICENSE) file for details.
 
@@ -40,4 +42,4 @@ If you have any questions or suggestions, please feel free to contact me at:
 I hope it helps you,
 Happy coding!
 
-By: Richardson Mercedes
+By: Richardson Mercedes With ❤️😁
