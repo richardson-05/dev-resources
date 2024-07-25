@@ -56,6 +56,7 @@
   /* 32px */
   --spacing-xxl: 4em;
   /* 64px */
+  --spacing-max: 50rem;
 
   /* Shadow variables */
   --shadow-1: 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -65,7 +66,7 @@
   --shadow-5: 0px 19px 38px rgba(0, 0, 0, 0.30);
 
   /* Max values */
-  --max-width: 1200px;
+  --max-width-container: 1200px;
 
   /* Transitions */
   --fast-transition: all 0.5s ease;
@@ -85,38 +86,38 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: var(--font-size-base);
+  font-size: var(--f-size-base);
   color: var(--color-gray-dark);
   line-height: 1.5;
 }
 
 h1 {
-  font-size: var(--font-size-h1);
+  font-size: var(--f-size-h1);
   font-weight: bold;
 }
 
 h2 {
-  font-size: var(--font-size-h2);
+  font-size: var(--f-size-h2);
   font-weight: bold;
 }
 
 h3 {
-  font-size: var(--font-size-h3);
+  font-size: var(--f-size-h3);
   font-weight: bold;
 }
 
 h4 {
-  font-size: var(--font-size-h4);
+  font-size: var(--f-size-h4);
   font-weight: bold;
 }
 
 h5 {
-  font-size: var(--font-size-h5);
+  font-size: var(--f-size-h5);
   font-weight: bold;
 }
 
 h6 {
-  font-size: var(--font-size-h6);
+  font-size: var(--f-size-h6);
   font-weight: bold;
 }
 
@@ -124,7 +125,6 @@ h6 {
 .button-primary {
   background-color: var(--color-primary);
   color: var(--color-white);
-  padding: var(--button-padding);
   border: none;
   cursor: pointer;
 }
@@ -132,7 +132,6 @@ h6 {
 .button-secondary {
   background-color: var(--color-secondary);
   color: var(--color-black);
-  padding: var(--button-padding);
   border: none;
   cursor: pointer;
 }
@@ -141,8 +140,8 @@ h6 {
 .input-field {
   background-color: var(--color-white);
   border: 0.0625em solid var(--color-gray-medium);
-  padding: var(--padding-medium);
-  font-size: var(--font-size-body1);
+  padding: var(--spacing-m);
+  font-size: var(---f-size-base);
   width: 100%;
   box-sizing: border-box;
 }
@@ -157,36 +156,36 @@ h6 {
 .alert-success {
   background-color: var(--color-success);
   color: var(--color-white);
-  padding: var(--padding-small);
-  margin: var(--spacing-medium) 0;
+  padding: var(--spacing-s);
+  margin: var(--spacing-m) 0;
 }
 
 .alert-error {
   background-color: var(--color-error);
   color: var(--color-white);
-  padding: var(--padding-small);
-  margin: var(--spacing-medium) 0;
+  padding: var(--spacing-s);
+  margin: var(--spacing-m) 0;
 }
 
 .alert-warning {
   background-color: var(--color-warning);
   color: var(--color-black);
-  padding: var(--padding-small);
-  margin: var(--spacing-medium) 0;
+  padding: var(--spacing-s);
+  margin: var(--spacing-m) 0;
 }
 
 .alert-info {
   background-color: var(--color-info);
   color: var(--color-white);
-  padding: var(--padding-small);
-  margin: var(--spacing-medium) 0;
+  padding: var(--spacing-s);
+  margin: var(--spacing-m) 0;
 }
 
 /* Grid Layout */
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: var(--spacing-medium);
+  gap: var(--spacing-m);
 }
 
 .grid-column-span-1 {
@@ -243,8 +242,7 @@ ol {
 }
 
 .container {
-    border: 1px solid green;
-    max-width: var(--max-width);
+    max-width: var(--max-width-container);
     margin: auto;
     overflow: hidden;
 }
@@ -293,11 +291,11 @@ ol {
 }
 
 .cr-max {
-    border-radius: var(--distance-max);
-    -webkit-border-radius: var(--distance-max);
-    -moz-border-radius: var(--distance-max);
-    -ms-border-radius: var(--distance-max);
-    -o-border-radius: var(--distance-max);
+    border-radius: var(--spacing-max);
+    -webkit-border-radius: var(--spacing-max);
+    -moz-border-radius: var(--spacing-max);
+    -ms-border-radius: var(--spacing-max);
+    -o-border-radius: var(--spacing-max);
     overflow: hidden;
 }
 
@@ -357,7 +355,7 @@ ol {
 
   .grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-small);
+    gap: var(--spacing-s);
   }
 }
 
@@ -395,44 +393,43 @@ ol {
 
   .grid {
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-medium);
+    gap: var(--spacing-m);
   }
 }
 
 /* Para pantallas grandes (escritorios) */
 @media (min-width: 961px) {
   h1 {
-    font-size: var(--font-size-h1);
+    font-size: var(--f-size-h1);
   }
 
   h2 {
-    font-size: var(--font-size-h2);
+    font-size: var(--f-size-h2);
   }
 
   h3 {
-    font-size: var(--font-size-h3);
+    font-size: var(--f-size-h3);
   }
 
   h4 {
-    font-size: var(--font-size-h4);
+    font-size: var(--f-size-h4);
   }
 
   h5 {
-    font-size: var(--font-size-h5);
+    font-size: var(--f-size-h5);
   }
 
   h6 {
-    font-size: var(--font-size-h6);
+    font-size: var(--f-size-h6);
   }
 
   .button-primary,
   .button-secondary {
-    padding: var(--button-padding);
-    font-size: var(--font-size-body1);
+    font-size: var(---f-size-base);
   }
 
   .grid {
     grid-template-columns: repeat(12, 1fr);
-    gap: var(--spacing-large);
+    gap: var(--spacing-l);
   }
 }
